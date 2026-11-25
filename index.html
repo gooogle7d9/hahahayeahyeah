@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f8f3">
+<meta name="description" content="Mood Campus, an interactive school wellbeing prototype for GTSU2037">
+<title>Mood Campus</title>
+<link rel="stylesheet" href="./style.css">
+<script defer src="./app.js"></script>
+</head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="#today"><span class="brand-icon" data-icon="sprout"></span><span>Mood Campus<small>SCHOOL WELLBEING</small></span></a>
+  <nav id="nav" aria-label="Main navigation"></nav>
+  <div class="side-bottom">
+    <button class="demo-link" data-action="demo"><span data-icon="play"></span> Demo controls</button>
+    <div class="profile"><span class="avatar">AL</span><div><b>Alex Lee</b><small>Student · 5B</small></div></div>
+  </div>
+</aside>
+<div class="workspace">
+<header class="topbar">
+  <span id="breadcrumb">Student space <span>/</span> Today</span>
+  <div class="header-actions"><span class="prototype"><i></i> Demo mode</span><button class="btn quiet" data-action="privacy"><span data-icon="shield"></span><span class="privacy-label">Privacy &amp; consent</span></button></div>
+</header>
+<main id="main" tabindex="-1"></main>
+<footer class="footer"><span>Mood Campus · GTSU2037</span><span>Classroom prototype · Use fictional entries</span></footer>
+</div>
+<dialog id="dialog"><div id="dialog-content"></div></dialog>
+<div id="toast" role="status"></div>
+</body></html>
