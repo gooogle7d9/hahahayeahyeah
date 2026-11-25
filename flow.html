@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f1edf5">
+<meta name="description" content="Clickable Open Up user flow and live phone prototype for the GTSU2037 presentation.">
+<title>Open Up — User Flow Demonstration</title>
+<link rel="icon" href="./icon-192.png">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./flow.css">
+<script defer src="./flow.js"></script>
+</head>
+<body class="flow-page">
+<header class="flow-header">
+  <a class="flow-brand" href="#map"><img src="./icon-192.png" width="32" height="32" alt=""> Open Up</a>
+  <h1>User Flow Demonstration</h1>
+  <p>GTSU2037 · Interactive school wellbeing prototype</p>
+  <nav id="flow-tabs" aria-label="Demo screens"></nav>
+</header>
+<main class="flow-main">
+  <section id="flow-map" class="flow-panel" aria-labelledby="map-heading">
+    <div class="map-heading"><h2 id="map-heading" tabindex="-1">Complete User Flow Map</h2><p>Select any step to open it in the working phone demo.</p></div>
+    <div id="flow-rows"></div>
+  </section>
+  <section id="flow-preview" class="flow-preview" aria-labelledby="preview-name" hidden>
+    <div class="demo-phone">
+      <div class="demo-status" aria-hidden="true"><span>9:41</span><span>••• <i></i></span></div>
+      <iframe id="flow-phone" title="Interactive Open Up phone demo"></iframe>
+      <div class="demo-home" aria-hidden="true"></div>
+    </div>
+    <aside class="step-panel">
+      <a class="back-link" href="#map">Back to flow map</a>
+      <div class="eyebrow" id="preview-group"></div>
+      <h2 id="preview-name" tabindex="-1"></h2>
+      <p id="preview-cue"></p>
+      <div class="step-controls"><a id="previous-step" class="btn quiet">Previous step</a><a id="next-step" class="btn">Next step</a></div>
+      <p class="demo-note">This preview uses fictional data. Changes stay in this demonstration tab.</p>
+    </aside>
+  </section>
+</main>
+<footer class="flow-footer"><a href="./">Open the standalone phone app</a><a href="./mood-campus-figma-flow.svg" download>Download the Figma storyboard</a></footer>
+</body>
+</html>
